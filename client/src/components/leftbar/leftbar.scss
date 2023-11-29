@@ -1,0 +1,43 @@
+
+::-webkit-scrollbar{
+    // width: 7px;
+    display: none;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(201, 190, 190);
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(141, 136, 136);
+}
+
+@import "../../style.scss";
+
+.leftbar{
+    @include themify($themes){
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    height: calc(100vh - 70px);
+    overflow-y: scroll;
+    position: sticky;
+    top: 70px;
+    background-color: themed("bgSoft");
+    color: themed("textColor");
+    font-size: 12px;
+
+    @include mobile{
+        display: none;
+    }
+    
+    .leftinfo{
+        display: flex;
+        gap: 10px;
+        justify-content: left;
+        align-items: center;
+        font-size: 12px;
+
+    }
+}
+}

@@ -1,0 +1,14 @@
+@import "../../style.scss";
+
+.feedbar{
+    @include themify($themes){
+    flex: 5;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: scroll;
+    background-color: themed("bg");
+    color: themed("textColor");
+    }
+}

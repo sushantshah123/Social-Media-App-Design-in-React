@@ -1,0 +1,32 @@
+.register{
+    background: #8d7575;
+    width: 50%;
+    padding: 10px;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+
+    h3{
+        text-align: center;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 50%;
+        margin: auto;
+
+        input{
+            padding: 5px 10px;
+            outline: none;
+        }
+
+        button{
+            padding: 5px;
+        }
+    }
+}

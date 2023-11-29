@@ -1,0 +1,105 @@
+@import "../../style.scss";
+.navbar{
+    @include themify($themes){
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+        padding: 0 10px;
+        background-color: themed("bg");
+        color: themed("textColor");
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        overflow: hidden;
+    
+        .left{
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+    
+            .thememode{
+                height: 30px;
+                width: 80px;
+                border: 2px solid themed("bgSoft");
+                border-radius:15px;
+                background-color: themed("bg");
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 4px;
+                position: relative;
+                .sun{
+                  height: 100%;
+                }
+                .moon{
+                    height: 100%;
+                  }
+                  .ball{
+                    position: absolute;
+                    cursor: pointer;
+                    height: 22px;
+                    width: 22px;
+                    border-radius: 50%;
+                    background-color:  rgb(252, 4, 4);
+                    top: 2px;
+                    right: 2px;
+                  }
+                  .ballModeOn{
+                    left: 2px;
+                  }
+            }
+    
+            .search{
+                display: flex;
+                gap: 8px;
+                justify-content: center;
+                align-items: center;
+                height: 25px;
+                border: 1px solid rgb(250, 237, 237);
+                padding: 10px;
+                border-radius: 2px;
+                @include mobile{
+                    display: none;
+                }
+
+                input{
+                    outline: none;
+                    border: none;
+                    padding: 5px;
+                background-color: transparent;
+               
+                }
+            }
+        }
+    
+        .right{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+    
+            .userinfo{
+                display: flex;
+                gap: 5px;
+                justify-content: center;
+                align-items: center;
+    
+                .userimg{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid red;
+                    border-radius: 50%;
+                    padding: 3px;
+                }
+    
+                span{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

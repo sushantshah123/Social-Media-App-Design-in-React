@@ -1,0 +1,118 @@
+@import "../../style.scss";
+
+::-webkit-scrollbar{
+    width: 7px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(201, 190, 190);
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(141, 136, 136);
+}
+.rightbar{
+    @include themify($themes){
+    flex: 3;
+    background-color: themed("bgSoft");
+    color: themed("textColor");
+    padding: 10px;
+    @include mobile{
+        display: none;
+    }
+}
+.rightbardetails{
+    background-color: white;
+    padding: 20px 15px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+.rightbar .topmost{
+    display: block;
+    
+}
+.topmost h4{
+    padding-bottom: 10px;
+    color: orange;
+    
+}
+.topmost .birthday{
+    display: flex;
+    align-items: center;
+}
+.birthday img{
+    height: 40px;
+    width: 50px;
+}
+.birthday h5 {
+    margin-left: 10px;
+    font-weight: 200;
+    font-size: 13px;
+}
+.birthday h5 span{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.news{
+    width: 100%;
+    height: 200px;
+    margin: 10px 5px;
+    position: relative;
+    border-radius: 5px;
+}
+.news img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.news h2{
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    color: white;
+}
+
+.online{
+    
+    padding: 10px 0;
+}
+.online h4{
+    padding-bottom: 10px;
+    color: orange;
+}
+.online .image{
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 5px 0;
+    border-radius: 50%;
+}
+
+.online .image .photo{
+    height: 35px;
+    width: 35px;
+    overflow: hidden;
+
+}
+
+.online .image .photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.online .image span{
+    padding-left: 10px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.dot{
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: rgb(18, 215, 215);
+    position: absolute;
+    left: 30px;
+    top: 5px;
+    border: 1px solid white;
+}
+}

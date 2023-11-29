@@ -1,0 +1,70 @@
+@import "../../../style.scss";
+
+.upload{
+    border-radius: 5px;
+    box-shadow: -2px -2px 21px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -2px -2px 21px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -2px -2px 21px 0px rgba(0,0,0,0.75);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: left;
+padding: 10px 0;
+.top{
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    img{
+       height: 30px;
+       width: 30px;
+       border-radius: 50%;
+       margin-right: 10px;
+    }
+    input{
+       border: none;
+       padding: 10px 5px;
+       outline: none;
+       background-color: transparent;
+    }
+}
+.Hr{
+   width: 80%;
+   margin: 0 0 0 18px;
+   color: black;
+}
+ .bottom{
+    display: flex;
+    align-items: center;
+    @include mobile{
+        flex-wrap: wrap;
+    }
+
+    .bot1{
+      padding: 10px 15px;
+      display: flex;
+      align-items: center;
+      .icons{
+       padding-right: 3px;
+       font-size: 25px;
+       font-weight: 700;
+       span{
+        font-size: 14px;
+        font-weight: 500;
+       }
+      }
+    }
+    .btn{
+
+        button{
+            border: none;
+            padding: 5px 10px;
+            font-weight: 400;
+            background-color: rgb(21, 188, 55);
+            color: white;
+            margin-left: 24px;
+            border-radius: 3px;
+          }
+      }
+}
+}
+
